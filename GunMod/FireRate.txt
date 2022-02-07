@@ -1,0 +1,5 @@
+for i,v in pairs(getgc(true)) do
+if typeof(v) == 'table' and rawget(v, 'ROFDelay') then
+rawset(v, 'ROFDelay', 0.001)
+end
+end
